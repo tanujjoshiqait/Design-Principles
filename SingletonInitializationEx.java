@@ -22,7 +22,7 @@ class LazyInitialization {
 	
 	public static LazyInitialization instance;
 	
-	public String s = "Hello! you are using singleton class with Lazy Initialization";
+	public String s ;
 	
 	public static LazyInitialization createInstance() 
     { 
@@ -31,13 +31,18 @@ class LazyInitialization {
   
         return instance; 
     } 
+	
+	private LazyInitialization () {
+		s = "Hello! you are using singleton class with Eager Initialization";
+
+	}
 }
 
 class ThreadSafeInitialization {
 	
 	public static ThreadSafeInitialization instance;
 	
-	public String s = "Hello! you are using singleton class with Thread Safe Initialization";
+	public String s ;
 	
 	public static synchronized ThreadSafeInitialization createInstance() 
     { 
@@ -46,6 +51,11 @@ class ThreadSafeInitialization {
   
         return instance; 
     } 
+	
+	private ThreadSafeInitialization() {
+		s = "Hello! you are using singleton class with Eager Initialization";
+
+	}
 }
 
 public class SingletonInitializationEx {
