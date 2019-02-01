@@ -1,4 +1,4 @@
-package assignmentByMudit;
+package assignmentbyTanuj;
 
 abstract class Computer {
 	
@@ -65,7 +65,7 @@ class ComputerFactory {
 
 
 
-public class FactoryDesignPatternEx {
+public class FactoryDesign {
 
 	public static void main(String[] args) {
 		Computer pc = ComputerFactory.getComputer("pc","4 GB","1 TB");
