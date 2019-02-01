@@ -1,4 +1,4 @@
-package assignmentByMudit;
+package assignmentbyTanuj;
 
 class EagerInitialize {
 	public static EagerInitialize instance = new EagerInitialize();
@@ -58,7 +58,7 @@ class ThreadSafeInitialization {
 	}
 }
 
-public class SingletonInitializationEx {
+public class SingletonInitialization {
 
 	public static void main(String[] args) {
 
